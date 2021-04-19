@@ -4,6 +4,11 @@ from os.path import basename
 import zipfile
 
 
+'''
+ You need create a file named "results"
+
+'''
+
 def load(file_name,flag = 1):
     data = Data(flag)
     if zipfile.is_zipfile(file_name):
@@ -62,7 +67,7 @@ class Data:
 
 
     def __init__(self,flag):
-        self.path = 'results/obj_{}/'.format(flag)            # It stores different failure in different files, but you need create a corresponding file first.
+        self.path = 'results/obj_{}/'.format(flag)            # It stores different failure in different files, but you need create a corresponding file named "obj_ " first, and two files named "saved", "temp" in it.
         self.data = json.loads(self.DATA_TEMPLATE)
         self.episode = json.loads(self.EPISODE_TEMPLATE)
         self.episode_id = 0
