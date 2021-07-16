@@ -12,7 +12,7 @@ This folder provides the interface of our method, you can edit it to apply to di
 
 3.Code Structure
 
-The folder ddpg contains the implement of the DDPG agent, and the util folder implements the RND and results storage. The wolp_agent file implements the agent of our method for discrete action. The cps_env is the interface to CPS system, and the generate file is the start of our method.
+The folder src/ddpg contains the implement of the DDPG agent, and the src/util folder implements the RND and results storage. The src/wolp_agent.py file implements the agent of our method for discrete action. The cps_env.py is the interface to CPS system, and the generate.py file is the start of our method.
 
 4.Usage
 
